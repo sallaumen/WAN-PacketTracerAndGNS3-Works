@@ -1,0 +1,35 @@
+Apr 08 18:19:52.363 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 08 18:19:52.363 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 32919.
+Apr 08 18:19:52.374 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 08 18:19:52.374 HYPERVISOR: exec_cmd: hypervisor working_dir /home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips 
+Apr 08 18:19:52.374 GENERAL: working_dir=/home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips
+Apr 08 18:19:52.374 HYPERVISOR: exec_cmd: hypervisor working_dir /home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips/c8f91a1e-08f6-4673-adf4-2f5b75d6c231 
+Apr 08 18:19:52.375 GENERAL: working_dir=/home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips/c8f91a1e-08f6-4673-adf4-2f5b75d6c231
+Apr 08 18:19:52.375 HYPERVISOR: exec_cmd: vm create MatrizBorda 4 c3725 
+Apr 08 18:19:52.375 VM: VM MatrizBorda created.
+Apr 08 18:19:52.375 HYPERVISOR: exec_cmd: vm set_con_tcp_port MatrizBorda 5013 
+Apr 08 18:19:52.375 HYPERVISOR: exec_cmd: c3725 get_mac_addr MatrizBorda 
+Apr 08 18:19:52.376 HYPERVISOR: exec_cmd: vm get_status MatrizBorda 
+Apr 08 18:19:52.376 HYPERVISOR: exec_cmd: vm set_idle_pc MatrizBorda 0x60c09aa0 
+Apr 08 18:19:52.377 HYPERVISOR: exec_cmd: vm set_ios MatrizBorda /home/notebooklabredes/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Apr 08 18:19:52.377 HYPERVISOR: exec_cmd: vm set_nvram MatrizBorda 256 
+Apr 08 18:19:52.378 HYPERVISOR: exec_cmd: vm get_status MatrizBorda 
+Apr 08 18:19:52.378 HYPERVISOR: exec_cmd: vm slot_add_binding MatrizBorda 1 0 NM-4T 
+Apr 08 18:19:52.378 HYPERVISOR: exec_cmd: vm set_disk0 MatrizBorda 0 
+Apr 08 18:19:52.379 HYPERVISOR: exec_cmd: vm slot_add_binding MatrizBorda 0 16 WIC-2T 
+Apr 08 18:19:52.379 HYPERVISOR: exec_cmd: c3725 set_mac_addr MatrizBorda c204.20ae.0000 
+Apr 08 18:19:53.703 HYPERVISOR: exec_cmd: nio create_udp udp-244fdbf6-139a-4239-a6db-653e3f73fae7 10028 127.0.0.1 10029 
+Apr 08 18:19:53.725 HYPERVISOR: exec_cmd: vm slot_add_nio_binding MatrizBorda 0 16 udp-244fdbf6-139a-4239-a6db-653e3f73fae7 
+Apr 08 18:19:53.725 HYPERVISOR: exec_cmd: vm get_status MatrizBorda 
+Apr 08 18:19:53.861 HYPERVISOR: exec_cmd: nio create_udp udp-4b73e121-bac6-4533-9e88-0bb89e6b923d 10036 127.0.0.1 10037 
+Apr 08 18:19:53.863 HYPERVISOR: exec_cmd: vm slot_add_nio_binding MatrizBorda 0 17 udp-4b73e121-bac6-4533-9e88-0bb89e6b923d 
+Apr 08 18:19:53.863 HYPERVISOR: exec_cmd: vm get_status MatrizBorda 
+Apr 08 18:27:04.968 HYPERVISOR: exec_cmd: vm get_status MatrizBorda 
+Apr 08 18:27:04.971 HYPERVISOR: exec_cmd: vm extract_config MatrizBorda 
+Apr 08 18:27:05.187 HYPERVISOR: exec_cmd: vm get_status MatrizBorda 
+Apr 08 18:27:05.188 HYPERVISOR: exec_cmd: vm extract_config MatrizBorda 
+Apr 08 18:27:05.188 HYPERVISOR: exec_cmd: vm delete MatrizBorda 
+Apr 08 18:27:05.189 VM: VM MatrizBorda destroyed.
+Apr 08 18:27:05.189 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 08 18:27:05.347 HYPERVISOR: Stopped.
+Apr 08 18:27:05.347 GENERAL: reset done.

@@ -1,0 +1,52 @@
+Apr 09 13:25:45.866 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 09 13:25:45.866 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 40983.
+Apr 09 13:25:45.877 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 09 13:25:45.877 HYPERVISOR: exec_cmd: hypervisor working_dir /home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips 
+Apr 09 13:25:45.877 GENERAL: working_dir=/home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips
+Apr 09 13:25:45.878 HYPERVISOR: exec_cmd: hypervisor working_dir /home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips/ac425c51-526c-45d9-99c3-6598bb20194f 
+Apr 09 13:25:45.878 GENERAL: working_dir=/home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips/ac425c51-526c-45d9-99c3-6598bb20194f
+Apr 09 13:25:45.878 HYPERVISOR: exec_cmd: vm create FilialR1 8 c3725 
+Apr 09 13:25:45.878 VM: VM FilialR1 created.
+Apr 09 13:25:45.878 HYPERVISOR: exec_cmd: vm set_con_tcp_port FilialR1 5014 
+Apr 09 13:25:45.879 HYPERVISOR: exec_cmd: c3725 get_mac_addr FilialR1 
+Apr 09 13:25:45.879 HYPERVISOR: exec_cmd: vm set_ios FilialR1 /home/notebooklabredes/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Apr 09 13:25:45.880 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:25:45.880 HYPERVISOR: exec_cmd: vm slot_add_binding FilialR1 1 0 NM-4T 
+Apr 09 13:25:45.880 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:25:45.880 HYPERVISOR: exec_cmd: vm set_idle_pc FilialR1 0x60c09aa0 
+Apr 09 13:25:45.881 HYPERVISOR: exec_cmd: c3725 set_mac_addr FilialR1 c208.235e.0000 
+Apr 09 13:25:45.881 HYPERVISOR: exec_cmd: vm set_disk0 FilialR1 0 
+Apr 09 13:25:45.881 HYPERVISOR: exec_cmd: vm set_nvram FilialR1 256 
+Apr 09 13:25:45.881 HYPERVISOR: exec_cmd: vm slot_add_binding FilialR1 0 16 WIC-2T 
+Apr 09 13:25:46.265 HYPERVISOR: exec_cmd: nio create_udp udp-ca3199d2-7c10-40a6-9dfa-abcfc19dc94c 10002 127.0.0.1 10003 
+Apr 09 13:25:46.315 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FilialR1 0 0 udp-ca3199d2-7c10-40a6-9dfa-abcfc19dc94c 
+Apr 09 13:25:46.315 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:25:46.672 HYPERVISOR: exec_cmd: nio create_udp udp-dd333983-e998-48d4-aa00-a5cab39c2da2 10010 127.0.0.1 10011 
+Apr 09 13:25:46.673 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FilialR1 1 1 udp-dd333983-e998-48d4-aa00-a5cab39c2da2 
+Apr 09 13:25:46.673 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:25:48.287 HYPERVISOR: exec_cmd: nio create_udp udp-df75b6e8-1a48-44d1-bd46-1e16742ceb71 10056 127.0.0.1 10057 
+Apr 09 13:25:48.288 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FilialR1 1 0 udp-df75b6e8-1a48-44d1-bd46-1e16742ceb71 
+Apr 09 13:25:48.288 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:28:16.238 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:28:16.238 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding FilialR1 1 0 
+Apr 09 13:28:16.240 HYPERVISOR: exec_cmd: nio delete udp-df75b6e8-1a48-44d1-bd46-1e16742ceb71 
+Apr 09 13:28:19.090 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:28:19.091 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding FilialR1 1 1 
+Apr 09 13:28:19.092 HYPERVISOR: exec_cmd: nio delete udp-dd333983-e998-48d4-aa00-a5cab39c2da2 
+Apr 09 13:28:27.258 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:28:27.259 HYPERVISOR: exec_cmd: vm slot_add_binding FilialR1 2 0 NM-1FE-TX 
+Apr 09 13:28:44.353 HYPERVISOR: exec_cmd: nio create_udp udp-be0445b2-50da-48b1-8f1d-25b3b2b42d2c 10010 127.0.0.1 10011 
+Apr 09 13:28:44.355 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FilialR1 0 1 udp-be0445b2-50da-48b1-8f1d-25b3b2b42d2c 
+Apr 09 13:28:44.355 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:28:50.081 HYPERVISOR: exec_cmd: nio create_udp udp-1647d119-7620-4172-88b3-7f3beaf47f29 10054 127.0.0.1 10055 
+Apr 09 13:28:50.082 HYPERVISOR: exec_cmd: vm slot_add_nio_binding FilialR1 2 0 udp-1647d119-7620-4172-88b3-7f3beaf47f29 
+Apr 09 13:28:50.082 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:29:33.851 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:29:33.853 HYPERVISOR: exec_cmd: vm extract_config FilialR1 
+Apr 09 13:29:34.061 HYPERVISOR: exec_cmd: vm get_status FilialR1 
+Apr 09 13:29:34.062 HYPERVISOR: exec_cmd: vm extract_config FilialR1 
+Apr 09 13:29:34.062 HYPERVISOR: exec_cmd: vm delete FilialR1 
+Apr 09 13:29:34.062 VM: VM FilialR1 destroyed.
+Apr 09 13:29:34.063 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 09 13:29:34.118 HYPERVISOR: Stopped.
+Apr 09 13:29:34.119 GENERAL: reset done.

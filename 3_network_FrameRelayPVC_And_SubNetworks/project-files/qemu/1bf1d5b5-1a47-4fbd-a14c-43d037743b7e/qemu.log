@@ -1,0 +1,4 @@
+Start QEMU with /usr/bin/qemu-system-x86_64 -name PC1 -m 256M -smp cpus=1 -enable-kvm -machine smm=off -boot order=c -drive file=/home/labredes108/GNS3/projects/ProjetoFrameRelayPVC/project-files/qemu/1bf1d5b5-1a47-4fbd-a14c-43d037743b7e/hda_disk.qcow2,if=ide,index=0,media=disk -uuid 1bf1d5b5-1a47-4fbd-a14c-43d037743b7e -serial telnet:127.0.0.1:5006,server,nowait -monitor tcp:127.0.0.1:45839,server,nowait -net none -device e1000,mac=0c:78:63:3b:7e:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:10073,localaddr=127.0.0.1:10072 -nographic
+
+Execution log:
+qemu-system-x86_64: terminating on signal 15 from pid 1420 (/usr/share/gns3/gns3-server/bin/python)

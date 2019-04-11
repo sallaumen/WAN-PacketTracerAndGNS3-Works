@@ -1,0 +1,16 @@
+Apr 09 15:27:44.364 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 09 15:27:44.364 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58809.
+Apr 09 15:27:44.374 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 09 15:27:44.374 HYPERVISOR: exec_cmd: hypervisor working_dir /home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips 
+Apr 09 15:27:44.374 GENERAL: working_dir=/home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips
+Apr 09 15:27:44.374 HYPERVISOR: exec_cmd: ethsw create SwitchB1 
+Apr 09 15:27:45.110 HYPERVISOR: exec_cmd: nio create_udp udp-09956fdd-1e66-4aa5-87e3-0667a5d8860e 10005 127.0.0.1 10004 
+Apr 09 15:27:45.111 HYPERVISOR: exec_cmd: ethsw add_nio SwitchB1 udp-09956fdd-1e66-4aa5-87e3-0667a5d8860e 
+Apr 09 15:27:45.126 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchB1 udp-09956fdd-1e66-4aa5-87e3-0667a5d8860e 1 
+Apr 09 15:27:46.662 HYPERVISOR: exec_cmd: nio create_udp udp-528f26cd-a981-48fc-b427-a070dd03cb9a 10048 127.0.0.1 10049 
+Apr 09 15:27:46.662 HYPERVISOR: exec_cmd: ethsw add_nio SwitchB1 udp-528f26cd-a981-48fc-b427-a070dd03cb9a 
+Apr 09 15:27:46.671 HYPERVISOR: exec_cmd: ethsw set_access_port SwitchB1 udp-528f26cd-a981-48fc-b427-a070dd03cb9a 1 
+Apr 09 15:27:59.683 HYPERVISOR: exec_cmd: ethsw delete SwitchB1 
+Apr 09 15:27:59.710 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 09 15:27:59.889 HYPERVISOR: Stopped.
+Apr 09 15:27:59.889 GENERAL: reset done.

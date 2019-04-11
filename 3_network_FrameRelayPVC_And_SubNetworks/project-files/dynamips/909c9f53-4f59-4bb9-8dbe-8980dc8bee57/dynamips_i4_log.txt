@@ -1,0 +1,34 @@
+Apr 09 15:46:09.542 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 09 15:46:09.542 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49181.
+Apr 09 15:46:09.552 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 09 15:46:09.552 HYPERVISOR: exec_cmd: hypervisor working_dir /media/labredes100/SONY_16GR/Projects/ProjetoFrameRelayPVC/project-files/dynamips 
+Apr 09 15:46:09.552 GENERAL: working_dir=/media/labredes100/SONY_16GR/Projects/ProjetoFrameRelayPVC/project-files/dynamips
+Apr 09 15:46:09.553 HYPERVISOR: exec_cmd: hypervisor working_dir /media/labredes100/SONY_16GR/Projects/ProjetoFrameRelayPVC/project-files/dynamips/44c6643e-6ee5-4a47-a1a1-1ef51612634a 
+Apr 09 15:46:09.553 GENERAL: working_dir=/media/labredes100/SONY_16GR/Projects/ProjetoFrameRelayPVC/project-files/dynamips/44c6643e-6ee5-4a47-a1a1-1ef51612634a
+Apr 09 15:46:09.553 HYPERVISOR: exec_cmd: vm create BordaFililal1 2 c3725 
+Apr 09 15:46:09.553 VM: VM BordaFililal1 created.
+Apr 09 15:46:09.553 HYPERVISOR: exec_cmd: vm set_con_tcp_port BordaFililal1 5015 
+Apr 09 15:46:09.553 HYPERVISOR: exec_cmd: c3725 get_mac_addr BordaFililal1 
+Apr 09 15:46:09.554 HYPERVISOR: exec_cmd: vm set_disk0 BordaFililal1 0 
+Apr 09 15:46:09.554 HYPERVISOR: exec_cmd: vm set_nvram BordaFililal1 256 
+Apr 09 15:46:09.554 HYPERVISOR: exec_cmd: c3725 set_mac_addr BordaFililal1 c202.422a.0000 
+Apr 09 15:46:09.555 HYPERVISOR: exec_cmd: vm get_status BordaFililal1 
+Apr 09 15:46:09.555 HYPERVISOR: exec_cmd: vm slot_add_binding BordaFililal1 1 0 NM-4T 
+Apr 09 15:46:09.556 HYPERVISOR: exec_cmd: vm set_ios BordaFililal1 /home/labredes100/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Apr 09 15:46:09.556 HYPERVISOR: exec_cmd: vm get_status BordaFililal1 
+Apr 09 15:46:09.556 HYPERVISOR: exec_cmd: vm set_idle_pc BordaFililal1 0x60c09aa0 
+Apr 09 15:46:10.569 HYPERVISOR: exec_cmd: nio create_udp udp-23e4f32b-4e89-4d10-8d63-ef59e469447e 10016 127.0.0.1 10017 
+Apr 09 15:46:10.589 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BordaFililal1 0 0 udp-23e4f32b-4e89-4d10-8d63-ef59e469447e 
+Apr 09 15:46:10.590 HYPERVISOR: exec_cmd: vm get_status BordaFililal1 
+Apr 09 15:46:12.138 HYPERVISOR: exec_cmd: nio create_udp udp-d57facb9-2f92-4f52-9a81-71b655c086f0 10060 127.0.0.1 10061 
+Apr 09 15:46:12.140 HYPERVISOR: exec_cmd: vm slot_add_nio_binding BordaFililal1 1 0 udp-d57facb9-2f92-4f52-9a81-71b655c086f0 
+Apr 09 15:46:12.140 HYPERVISOR: exec_cmd: vm get_status BordaFililal1 
+Apr 09 15:46:33.450 HYPERVISOR: exec_cmd: vm get_status BordaFililal1 
+Apr 09 15:46:33.450 HYPERVISOR: exec_cmd: vm extract_config BordaFililal1 
+Apr 09 15:46:33.633 HYPERVISOR: exec_cmd: vm get_status BordaFililal1 
+Apr 09 15:46:33.633 HYPERVISOR: exec_cmd: vm extract_config BordaFililal1 
+Apr 09 15:46:33.634 HYPERVISOR: exec_cmd: vm delete BordaFililal1 
+Apr 09 15:46:33.634 VM: VM BordaFililal1 destroyed.
+Apr 09 15:46:33.665 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 09 15:46:34.073 HYPERVISOR: Stopped.
+Apr 09 15:46:34.073 GENERAL: reset done.

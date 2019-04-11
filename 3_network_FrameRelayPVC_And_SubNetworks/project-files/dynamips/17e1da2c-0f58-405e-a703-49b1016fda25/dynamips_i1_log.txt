@@ -1,0 +1,40 @@
+Apr 09 15:27:44.291 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 09 15:27:44.291 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55495.
+Apr 09 15:27:44.298 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 09 15:27:44.298 HYPERVISOR: exec_cmd: hypervisor working_dir /home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips 
+Apr 09 15:27:44.298 GENERAL: working_dir=/home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips
+Apr 09 15:27:44.299 HYPERVISOR: exec_cmd: hypervisor working_dir /home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips/3f33ab5e-9a8c-4d15-8ced-5fa466b3ee62 
+Apr 09 15:27:44.299 GENERAL: working_dir=/home/notebooklabredes/GNS3/projects/ProjetoFrameRelayPVC/project-files/dynamips/3f33ab5e-9a8c-4d15-8ced-5fa466b3ee62
+Apr 09 15:27:44.299 HYPERVISOR: exec_cmd: vm create MatrizR1 5 c3725 
+Apr 09 15:27:44.299 VM: VM MatrizR1 created.
+Apr 09 15:27:44.300 HYPERVISOR: exec_cmd: vm set_con_tcp_port MatrizR1 5009 
+Apr 09 15:27:44.300 HYPERVISOR: exec_cmd: c3725 get_mac_addr MatrizR1 
+Apr 09 15:27:44.300 HYPERVISOR: exec_cmd: c3725 set_mac_addr MatrizR1 c205.20be.0000 
+Apr 09 15:27:44.300 HYPERVISOR: exec_cmd: vm set_nvram MatrizR1 256 
+Apr 09 15:27:44.301 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:44.301 HYPERVISOR: exec_cmd: vm slot_add_binding MatrizR1 2 0 NM-1FE-TX 
+Apr 09 15:27:44.301 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:44.301 HYPERVISOR: exec_cmd: vm slot_add_binding MatrizR1 1 0 NM-4T 
+Apr 09 15:27:44.302 HYPERVISOR: exec_cmd: vm set_ios MatrizR1 /home/notebooklabredes/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Apr 09 15:27:44.302 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:44.302 HYPERVISOR: exec_cmd: vm set_idle_pc MatrizR1 0x60c09aa0 
+Apr 09 15:27:44.303 HYPERVISOR: exec_cmd: vm set_disk0 MatrizR1 0 
+Apr 09 15:27:44.303 HYPERVISOR: exec_cmd: vm slot_add_binding MatrizR1 0 16 WIC-2T 
+Apr 09 15:27:45.215 HYPERVISOR: exec_cmd: nio create_udp udp-c0242731-a1da-4508-825a-2772cea6d1b1 10010 127.0.0.1 10011 
+Apr 09 15:27:45.238 HYPERVISOR: exec_cmd: vm slot_add_nio_binding MatrizR1 0 0 udp-c0242731-a1da-4508-825a-2772cea6d1b1 
+Apr 09 15:27:45.238 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:46.208 HYPERVISOR: exec_cmd: nio create_udp udp-db9be905-6602-4851-897a-b3c92393413a 10036 127.0.0.1 10037 
+Apr 09 15:27:46.211 HYPERVISOR: exec_cmd: vm slot_add_nio_binding MatrizR1 0 1 udp-db9be905-6602-4851-897a-b3c92393413a 
+Apr 09 15:27:46.211 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:46.885 HYPERVISOR: exec_cmd: nio create_udp udp-f4365f9d-5b8a-4c27-adda-aaf9494f4358 10058 127.0.0.1 10059 
+Apr 09 15:27:46.886 HYPERVISOR: exec_cmd: vm slot_add_nio_binding MatrizR1 2 0 udp-f4365f9d-5b8a-4c27-adda-aaf9494f4358 
+Apr 09 15:27:46.887 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:59.669 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:59.670 HYPERVISOR: exec_cmd: vm extract_config MatrizR1 
+Apr 09 15:27:59.752 HYPERVISOR: exec_cmd: vm get_status MatrizR1 
+Apr 09 15:27:59.752 HYPERVISOR: exec_cmd: vm extract_config MatrizR1 
+Apr 09 15:27:59.753 HYPERVISOR: exec_cmd: vm delete MatrizR1 
+Apr 09 15:27:59.753 VM: VM MatrizR1 destroyed.
+Apr 09 15:27:59.753 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 09 15:27:59.813 HYPERVISOR: Stopped.
+Apr 09 15:27:59.813 GENERAL: reset done.
